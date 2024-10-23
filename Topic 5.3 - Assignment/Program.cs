@@ -7,9 +7,9 @@ namespace Topic_5._3___Assignment
     {
         static void Main(string[] args)
         {
-            int age, guess;
+            int age, guess, temp;
             double money;
-            string isWorking, password;
+            string isWorking, password, pizza, fav, look;
 
             Console.WriteLine("Hello firend this is OTZ and today i will be asking you what your age is, so how old are you?");
             Console.Write("Enter age here : ");
@@ -57,7 +57,7 @@ namespace Topic_5._3___Assignment
 
             Int32.TryParse(Console.ReadLine(), out guess);
 
-            if (password.ToLower() == "santa" && guess < 5)
+            if (password.ToLower() == "jimmy" && guess < 5)
             {
                 Console.WriteLine("WOWZA MAN YOU GOT IT I'M SUPER IMPRESSED");
             }
@@ -65,7 +65,66 @@ namespace Topic_5._3___Assignment
             {
                 Console.WriteLine("Oh too bad you suck LOL");
             }
-            Console.WriteLine("");
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hey man I dare you to guess what my fav pizza topping is. If you do i will give you a big ol bear hug");
+            Console.Write("Enter your answer here: ");
+            pizza = Console.ReadLine();
+            if (pizza.ToLower().Contains("bacon") && pizza.ToLower().Contains("ham"))
+            {
+                Console.WriteLine("Good job man, now come on in here, ima give you a big ol bear hug!");
+            }
+            else
+            {
+                Console.WriteLine("You couln't be more wrong... *DEEEEEAAAAADDDDD* ");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hello friends this is the bus driver, now it seems as tho you want a bus pass although i need to know whether or not you are a kid teen or elderly person.");
+            Console.WriteLine("Now how old are you?");
+            Console.Write("Enter your answer here: ");
+            Int32.TryParse (Console.ReadLine(), out age);
+            if (age <= 12 ||  age >= 60 )
+            {
+                Console.WriteLine("Your ticket is going to cost $2.00 :)");
+            }
+            else
+            {
+                Console.WriteLine("Your ticket is going to cost $3.50 :(");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hey man whats your fav animal...                     their is only 1 correct answer btw");
+            Console.Write("Enter your answer here: ");
+            fav = Console.ReadLine();
+            if (fav.ToLower() == "jimmy" || fav.ToLower() == "dog" || fav.ToLower() == "cats")
+            {
+                Console.WriteLine("W answers big man");
+            }
+            else
+            {
+                Console.WriteLine("Bro what the?");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Yo dude whats the temp outside right now, and how does it look, like is it sunny or cloudy?");
+            Console.Write("Enter what the temp is here: ");
+            Int32.TryParse(Console.ReadLine(), out temp);
+            Console.Write("Also enter how it looks outside here: ");
+            
+            look = Console.ReadLine();
+            if (temp >= 25 &&  look.ToLower() == "sunny")
+            {
+                Console.WriteLine("Oh cool man ima go swim with jimmy now... *Jimmy absorbed the all the oceans* ");
+            }
+            else
+            {
+                Console.WriteLine("Hmmmmmm yeaaa idk man i think ima go sleep now L O L.");
+            }
         }
     }
 }
