@@ -124,7 +124,9 @@ namespace Topic_5._3___Assignment
             else
             {
                 Console.WriteLine("Hmmmmmm yeaaa idk man i think ima go sleep now L O L.");
+
             }
+            Console.Clear();
         }
     }
 }
